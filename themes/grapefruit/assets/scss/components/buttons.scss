@@ -1,0 +1,16 @@
+.btn-primary {
+    background-color: $primary;
+    border-color: $primary;
+}
+
+.btn-primary:hover {
+    background-color: $secondary;
+    border-color: $secondary;
+}
+.btn-primary:active {
+    background-color: $secondary;
+    border-color: $secondary;
+}
+.btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgba($primary, .5);
+}

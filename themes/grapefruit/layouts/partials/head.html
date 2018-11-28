@@ -1,0 +1,33 @@
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    {{/* Site Title */}}
+    <title>{{ .Site.Title }}</title>
+
+    {{/* Mobile Specific Meta */}}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{/* Additionals informations */}}
+    <meta name="description" content="Mint Website">
+    <meta name="author" content="Olivier Chemla">
+
+    {{/* Bootstrap Framework */}}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    {{/* Font Awesome */}}
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+        crossorigin="anonymous">
+
+    {{/* Glide CSS */}}
+    <link rel="stylesheet" href="css/glide.core.css">
+    <link rel="stylesheet" href="css/glide.theme.css">
+    
+    {{/* SASS ressources compliled to CSS */}}
+    {{ $style := resources.Get "/scss/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+    
+    <!--Favicon-->
+    <link rel="shortcut icon" type="image/x-icon" href="{{ "favicon.ico" | absURL }}" />
+</head> 

@@ -1,0 +1,21 @@
+body {
+    // Align inside content
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    //Reset
+    margin: 0;
+    // Style
+    font-family: "Roboto";
+    color: $black;
+    background-image: linear-gradient( 180deg, rgb(33, 33, 51) 10%, rgb(18, 18, 31) 100%);
+}
+
+.wrapper {
+    // Align inside content
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    min-height: 400px;
+}
