@@ -1,7 +1,7 @@
 ---
 title: "Sarah Fisher"
 date: 2018-11-23T14:12:45+01:00
-featured_image: "https://bit.ly/2R7BYTf"
+feature_image: "/img/cards/card3.jpg"
 draft: true
 ---
 

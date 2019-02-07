@@ -1,0 +1,17 @@
+{{ define "main" }}
+<section class="single__content">
+    {{ with .Params.feature_image }}
+    <img class="single__img" src="{{ . | urlize }}" alt="">
+    {{ end }}
+    <div class="single__body">
+        <div class="single__body--left">
+            
+        </div>
+        <div class="single__body--right">
+            <a href="{{ .Site.BaseURL }}"><i class="fas fa-arrow-left mr-2"></i>Retour</a>
+            <h2>{{ .Title}}</h2>
+            <p>{{ .Content }}</p>
+        </div>
+    </div>
+</section>
+{{ end }}

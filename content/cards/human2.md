@@ -1,7 +1,7 @@
 ---
 title: "Eric Menier"
 date: 2018-11-23T12:11:58+01:00
-featured_image: "https://bit.ly/2R7BYTf"
+feature_image: "/img/cards/card2.jpg"
 draft: true
 ---
 
