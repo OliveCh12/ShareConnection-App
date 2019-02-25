@@ -31,8 +31,11 @@
     <link rel="stylesheet" href="css/glide.theme.css">
     
     {{/* SASS ressources compliled to CSS */}}
-    {{ $style := resources.Get "/scss/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
-    <link rel="stylesheet" href="{{ $style.Permalink }}">
+    {{/*  {{ $style := resources.Get "/scss/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">  */}}
+
+    {{/*  Minified CSS  */}}
+    <link rel="stylesheet" type="text/css" media="screen" href="{{"css/main.minified.css" | relURL}}" />
     
     <!--Favicon-->
     <link rel="shortcut icon" type="image/x-icon" href="{{ "favicon.ico" | absURL }}" />
